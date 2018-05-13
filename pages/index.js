@@ -14,10 +14,8 @@ const Index = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
 
-      <style>{`body { margin: 0; padding: 0; }`}</style>
+      <style dangerouslySetInnerHTML={{ __html: style }} />
     </Head>
-
-    <style dangerouslySetInnerHTML={{ __html: style }} />
 
     <div className="container has-text-centered">
       <Header time={new Date()} city="London" />

@@ -1,10 +1,22 @@
 import React from 'react';
+import Head from 'next/head'
 import style from '../styles/style.scss';
 import Header from '../components/header';
 import Temperature from '../components/temperature';
 
 const Index = () => (
   <div>
+    <Head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>Weatherly</title>
+      <meta name="description" content="Weather conditions as experienced by humans." />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+
+      <style>{`body { margin: 0; padding: 0; }`}</style>
+    </Head>
+
     <style dangerouslySetInnerHTML={{ __html: style }} />
 
     <div className="container has-text-centered">
